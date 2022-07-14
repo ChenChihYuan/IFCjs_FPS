@@ -10,7 +10,7 @@
     /* cursor: cell; */
   }
   
-  #three-canvas {
+  /* #three-canvas {
     position: fixed;
     top: 0;
     left: 0;
@@ -58,4 +58,5 @@
   .expand{
     animation: cursorExpand .5s forwards;
     border: 1px solid grey;
-  }
+  } */
+
