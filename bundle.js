@@ -91424,14 +91424,34 @@ class Controls{
         this.camera = this.experience.camera;
 
         this.setMouse();
+        // this.switchControls();
     }
 
+    // switchControls() {
+    //     // listen for mouse click on div with class named 'control_switch'
+
+    //     console.log(this.experience.camera.controls)
+
+    //     const btn = document.querySelector('.control_switch');
+    //     console.log(btn)
+    //     btn.addEventListener('click', () => {
+    //         console.log('click')
+    //     });
+        
+    //     // listen for mouse click on button with id named 'tmp'
+    //     // const btn = document.getElementById('tmp');
+    //     // btn.addEventListener('click', () => {
+    //     //     console.log('click')
+    //     // }
+    //     // );
+    // }
     
     setMouse() {
         this.mouse = new Vector2();
 
         // triggered when the mouse moves
         window.addEventListener('mousemove', (event) => {
+            
             this.mouse.x = event.clientX / this.sizes.width * 2 - 1;
             this.mouse.y = -(event.clientY / this.sizes.height) * 2 + 1;
         });
@@ -91467,11 +91487,14 @@ class Controls{
 
         
         // listen for mouse click on div with class named 'control_switch'
-        const control_switch = window.document.querySelector('.control_switch');
-        console.log(control_switch);
-        control_switch.addEventListener('click', () => {
+        const btn = document.querySelector('.control_switch');
+        console.log(btn);
+        
+        btn.addEventListener('mouse', () => {
             console.log('click');
+            // this.switch();
         });
+        
         
        
     }
@@ -91605,9 +91628,9 @@ class Experience{
 
 new Experience(document.querySelector('#three-canvas'));
 
-document.querySelector('.control_switch').addEventListener('click', (e) => {
-    console.log('clicked');
-});
+// document.querySelector('.control_switch').addEventListener('click', (e) => {
+//     console.log('clicked');
+// });
 
 // const experience = new Experience(document.querySelector('canvas.webgl'));
 

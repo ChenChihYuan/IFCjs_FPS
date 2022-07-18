@@ -3,9 +3,9 @@ import Experience from './Experience/Experience.js';
 
 const experience = new Experience(document.querySelector('#three-canvas'));
 
-document.querySelector('.control_switch').addEventListener('click', (e) => {
-    console.log('clicked');
-});
+// document.querySelector('.control_switch').addEventListener('click', (e) => {
+//     console.log('clicked');
+// });
 
 // const experience = new Experience(document.querySelector('canvas.webgl'));
 
