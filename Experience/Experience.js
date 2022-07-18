@@ -45,6 +45,8 @@ export default class Experience{
         this.time.on('tick', () => {
             this.update()
         })
+
+        // Camera update event
     }
 
     resize(){
@@ -55,5 +57,9 @@ export default class Experience{
     update(){
         this.camera.update();
         this.renderer.update();
+    }
+
+    switch(){
+        this.camera.switch();
     }
 }

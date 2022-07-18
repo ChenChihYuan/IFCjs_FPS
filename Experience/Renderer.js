@@ -41,4 +41,8 @@ export default class Renderer
     {
         this.instance.render(this.scene, this.camera.instance)
     }
+
+    switch(){
+        this.instance.render(this.camera, this.camera.instance)
+    }
 }

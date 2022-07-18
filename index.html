@@ -9,7 +9,18 @@
     </head>
     <body>
         <!-- <div class="cursor"></div> -->
-        <!-- <input type="file" name="load" id="file-input" /> -->
+        <input type="file" name="load" id="file-input" />
+
+        <label for="files"> Choose a ifc file</label>
+        <select id="files">
+            <option value="">--Choose a ifc file</option>
+            <option value="01.ifc">01.ifc</option>
+            <option value="02.ifc">02.ifc</option>
+            <option value="03.ifc">03.ifc</option>
+            <option value="04.ifc">04.ifc</option>
+            <option value="05.ifc">05.ifc</option>
+        </select>
+        <div class="control_switch">🚶</div>
         <canvas id="three-canvas"></canvas>
         <script src="bundle.js"></script>
     </body>
